@@ -1,6 +1,6 @@
 # GFQL
 
-> **Note:** This repository is a placeholder. For the full GFQL implementation, documentation, and examples, visit the [PyGraphistry GitHub repository](https://github.com/graphistry/pygraphistry).
+> **Note:** This repository is a placeholder. For the full GFQL implementation, documentation, and examples, visit the [PyGraphistry GitHub repository](https://github.com/graphistry/pygraphistry) and [GFQL documentation](https://pygraphistry.readthedocs.io/en/latest/gfql/index.html).
 
 ## What is GFQL?
 
