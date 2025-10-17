@@ -13,9 +13,9 @@ GFQL is trusted by banks, startups, security teams, and every Graphistry user fo
 ## Top Features
 
 - **Embeddable Graph Queries**: Write expressive graph traversals and pattern matching queries that can be embedded directly in your Python workflows
-- **Dataframe-Native Operations**: Leverage familiar dataframe APIs (pandas, cuDF, Apache Arrow) for graph computations with seamless integration
-- **GPU-Accelerated Performance**: Process massive graphs with billions of edges using GPU acceleration for unprecedented speed. Part of the NVIDIA Rapids ecosystem for high-performance GPU computing
-- **Columnar Computing**: Efficient in-memory columnar storage and operations optimized for modern analytics workloads
+- **Dataframe-Native Operations**: Leverage familiar dataframe APIs ([Pandas](https://pandas.pydata.org/), cuDF, [Apache Arrow](https://arrow.apache.org/)) for graph computations with seamless integration. Apache Arrow provides faster & safer data that works with most DBs and data platforms
+- **GPU-Accelerated Performance**: Process massive graphs with billions of edges using GPU acceleration for unprecedented speed. Part of the [NVIDIA Rapids](https://rapids.ai/) ecosystem for vectorized GPU columnar engine mode on GPUs
+- **Columnar Computing**: Efficient in-memory columnar storage and operations optimized for modern analytics workloads. Vectorized CPU columnar engine mode on CPUs via [Pandas](https://pandas.pydata.org/) and GPU mode via [NVIDIA Rapids](https://rapids.ai/)
 - **Open Source & Extensible**: Fully open source with extensible architecture for custom graph operations and integrations
 - **Rich Connector Ecosystem**: Seamlessly integrate with your existing data infrastructure without requiring a graph database:
 
