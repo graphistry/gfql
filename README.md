@@ -4,6 +4,8 @@
 
 GFQL (Graph dataFrame Query Language) is an open-source embeddable graph query language for data scientists, analysts, and developers working with graph data. It combines the expressiveness of graph analytics with the performance of modern dataframe operations, enabling native in-memory large-scale columnar computing on graph structures. GFQL makes it easy to wrangle, transform, and analyze graph data using familiar dataframe-style operations while leveraging GPU acceleration for processing graphs with billions of edges.
 
+**GFQL enables graph wrangling without requiring a graph database.** You can separate your storage tier (SQL databases, files, data lakes) from how your application or cluster handles graph operations like shaping, cleaning, pattern searching, algorithmic enrichments, and visualization. Work directly with your existing data infrastructure.
+
 GFQL is trusted by banks, startups, security teams, and every Graphistry user for mission-critical graph analytics and investigation workflows.
 
 ## Top Features
@@ -13,10 +15,11 @@ GFQL is trusted by banks, startups, security teams, and every Graphistry user fo
 - **GPU-Accelerated Performance**: Process massive graphs with billions of edges using GPU acceleration for unprecedented speed. Part of the NVIDIA Rapids ecosystem for high-performance GPU computing
 - **Columnar Computing**: Efficient in-memory columnar storage and operations optimized for modern analytics workloads
 - **Open Source & Extensible**: Fully open source with extensible architecture for custom graph operations and integrations
-- **Rich Connector Ecosystem**: Seamlessly integrate with popular data platforms and tools:
+- **Rich Connector Ecosystem**: Seamlessly integrate with your existing data infrastructure without requiring a graph database:
+  - **File Formats**: CSV, Parquet, Excel (XLSX), JSON
   - **Data Platforms & SQL**: Databricks, Splunk, PostgreSQL, Azure Data Explorer (Kusto), Google Cloud Spanner
-  - **Graph Databases**: Neo4j, Amazon Neptune, TigerGraph, ArangoDB, Memgraph
-  - **Python Tools**: CSV, Pandas, Apache Arrow, NVIDIA RAPIDS, NetworkX, Graphviz
+  - **Graph Databases** (optional): Neo4j, Amazon Neptune, TigerGraph, ArangoDB, Memgraph
+  - **Python Tools**: Pandas, Apache Arrow, NVIDIA RAPIDS cuDF, NetworkX, Graphviz
 
 ## Next Steps
 
