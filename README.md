@@ -16,5 +16,5 @@ GFQL (Graph dataFrame Query Language) is an open-source embeddable graph query l
 
 - [GFQL Documentation](https://pygraphistry.readthedocs.io/en/latest/gfql/overview.html) - Complete guide in the PyGraphistry Read the Docs
 - [PyGraphistry GitHub Repository](https://github.com/graphistry/pygraphistry) - Main project repository with GFQL implementation
-- [2B Edge Graph GPU Result](https://www.linkedin.com/company/graphistry/) - 2025 LinkedIn post about GFQL's 2 billion edge graph GPU performance
+- [2B Edge Graph GPU Result](https://www.linkedin.com/posts/graphistry_at-graph-the-planet-2025-we-showed-gfql-activity-7341259182924304385-F8XF?utm_source=share&utm_medium=member_android&rcm=ACoAAAPO5vIBimmdPlYKpPDVS8xKMWdcgjz403A) - 2025 LinkedIn post about GFQL's 2 billion edge graph GPU performance
 - [What is Graph Intelligence?](https://gradientflow.com/what-is-graph-intelligence/) - 2022 article by Ben Lorica at Gradient Flow on graph intelligence in the compute tier
