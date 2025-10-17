@@ -1,2 +1,36 @@
-# gfql
-The Graph dataFrame Query Language: The open source embeddable graph wrangling with native in-memory large-scale columnar computing. See pygaphistry OSS repo.
+# GFQL
+
+> **Note:** This repository is a placeholder. For the full GFQL implementation, documentation, and examples, visit the [PyGraphistry GitHub repository](https://github.com/graphistry/pygraphistry) and [GFQL documentation](https://pygraphistry.readthedocs.io/en/latest/gfql/index.html). See the [SQL/Cypher/GFQL comparison guide](https://pygraphistry.readthedocs.io/en/latest/gfql/translate.html) to understand how GFQL relates to familiar query languages.
+
+## What is GFQL?
+
+GFQL (Graph dataFrame Query Language) is an open-source embeddable graph query language for data scientists, analysts, and developers working with graph data. It combines the expressiveness of graph analytics with the performance of modern dataframe operations, enabling native in-memory large-scale columnar computing on graph structures. GFQL makes it easy to wrangle, transform, and analyze graph data using familiar dataframe-style operations while leveraging GPU acceleration for processing graphs with billions of edges.
+
+**GFQL enables graph wrangling without requiring a graph database.** You can separate your storage tier (SQL databases, files, data lakes, or graph databases) from how your application or cluster handles graph operations like shaping, cleaning, pattern searching, algorithmic enrichments, and visualization. Work directly with your existing data infrastructure.
+
+GFQL is trusted by banks, startups, security teams, and every Graphistry user for mission-critical graph analytics and investigation workflows.
+
+## Top Features
+
+- **Embeddable Graph Queries**: Write expressive graph traversals and pattern matching queries that can be embedded directly in your Python workflows
+- **Dataframe-Native Operations**: Leverage familiar dataframe APIs ([Pandas](https://pandas.pydata.org/), cuDF, [Apache Arrow](https://arrow.apache.org/)) for graph computations with seamless integration. Apache Arrow provides faster & safer data that works with most DBs and data platforms
+- **GPU-Accelerated Performance**: Process massive graphs with billions of edges using GPU acceleration for unprecedented speed. Part of the [NVIDIA Rapids](https://rapids.ai/) ecosystem for vectorized GPU columnar engine mode on GPUs
+- **Columnar Computing**: Efficient in-memory columnar storage and operations optimized for modern analytics workloads. Vectorized CPU columnar engine mode on CPUs via [Pandas](https://pandas.pydata.org/) and GPU mode via [NVIDIA Rapids](https://rapids.ai/)
+- **Open Source & Extensible**: Fully open source with extensible architecture for custom graph operations and integrations
+- **Rich Connector Ecosystem**: Seamlessly integrate with your existing data infrastructure without requiring a graph database:
+
+  | Category | Connector Tutorials |
+  |----------|---------------------|
+  | **Data Platforms, SQL & Logs** | <a href="https://pygraphistry.readthedocs.io/en/latest/demos/demos_databases_apis/databricks_pyspark/graphistry-notebook-dashboard.html"><img src="https://img.shields.io/badge/Databricks-FF3621?style=flat&logo=databricks&logoColor=white"></a> <a href="https://pygraphistry.readthedocs.io/en/latest/demos/demos_databases_apis/splunk/splunk_demo_public.html"><img src="https://img.shields.io/badge/Splunk-000000?style=flat&logo=splunk&logoColor=white"></a> <a href="https://pygraphistry.readthedocs.io/en/latest/demos/demos_databases_apis/sql/postgres.html"><img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white"></a> <a href="https://pygraphistry.readthedocs.io/en/latest/demos/demos_databases_apis/microsoft/kusto/graphistry_ADX_kusto_demo.html"><img src="https://img.shields.io/badge/Azure_Data_Explorer_(Kusto)-0078D4?style=flat&logo=microsoftazure&logoColor=white"></a> <a href="https://pygraphistry.readthedocs.io/en/latest/demos/demos_databases_apis/spanner/google_spanner_finance_graph.html"><img src="https://img.shields.io/badge/Google_Cloud_Spanner-4285F4?style=flat&logo=googlecloud&logoColor=white"></a> <a href="https://pygraphistry.readthedocs.io/en/latest/demos/upload_csv_miniapp.html"><img src="https://img.shields.io/badge/CSV-217346?style=flat&logo=microsoftexcel&logoColor=white"></a> <a href="https://pygraphistry.readthedocs.io/en/latest/demos/demos_databases_apis/parquet/parquet_gpu.html"><img src="https://img.shields.io/badge/Parquet-50ABF1?style=flat&logo=apache&logoColor=white"></a> |
+  | **Graph Databases** | <a href="https://pygraphistry.readthedocs.io/en/latest/demos/demos_databases_apis/neo4j/official/graphistry_bolt_tutorial_public.html"><img src="https://img.shields.io/badge/Neo4j-4581C3?style=flat&logo=neo4j&logoColor=white"></a> <a href="https://pygraphistry.readthedocs.io/en/latest/demos/demos_databases_apis/neptune/neptune_cypher_viz_using_bolt.html"><img src="https://img.shields.io/badge/Amazon_Neptune-FF9900?style=flat&logo=amazonaws&logoColor=white"></a> <a href="https://pygraphistry.readthedocs.io/en/latest/demos/demos_databases_apis/tigergraph/tigergraph_pygraphistry_bindings.html"><img src="https://img.shields.io/badge/TigerGraph-FF6600?style=flat"></a> <a href="https://pygraphistry.readthedocs.io/en/latest/demos/demos_databases_apis/arango/arango_tutorial.html"><img src="https://img.shields.io/badge/ArangoDB-DDE072?style=flat&logo=arangodb&logoColor=black"></a> <a href="https://pygraphistry.readthedocs.io/en/latest/demos/demos_databases_apis/memgraph/visualizing_iam_dataset.html"><img src="https://img.shields.io/badge/Memgraph-DD2222?style=flat"></a> |
+  | **Python Tools & Libraries** | <a href="https://pygraphistry.readthedocs.io/en/latest/demos/demos_databases_apis/gpu_rapids/part_i_cpu_pandas.html"><img src="https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white"></a> <a href="https://pygraphistry.readthedocs.io/en/latest/performance.html"><img src="https://img.shields.io/badge/Apache_Arrow-000000?style=flat&logo=apachearrow&logoColor=white"></a> <a href="https://pygraphistry.readthedocs.io/en/latest/demos/demos_databases_apis/gpu_rapids/cugraph.html"><img src="https://img.shields.io/badge/NVIDIA_RAPIDS-76B900?style=flat&logo=nvidia&logoColor=white"></a> <a href="https://pygraphistry.readthedocs.io/en/latest/demos/demos_databases_apis/networkx/networkx.html"><img src="https://img.shields.io/badge/NetworkX-013243?style=flat"></a> <a href="https://pygraphistry.readthedocs.io/en/latest/demos/demos_databases_apis/graphviz/graphviz.html"><img src="https://img.shields.io/badge/Graphviz-2A2A2A?style=flat&logo=graphviz&logoColor=white"></a> |
+
+  *<a href="https://pygraphistry.readthedocs.io/en/latest/notebooks/plugins.connectors.html">View all connectors →</a>*
+
+## Next Steps
+
+- [SQL/Cypher/GFQL Translation Guide](https://pygraphistry.readthedocs.io/en/latest/gfql/translate.html) - Compare GFQL with SQL and Cypher query languages
+- [GFQL Documentation](https://pygraphistry.readthedocs.io/en/latest/gfql/overview.html) - Complete guide in the PyGraphistry Read the Docs
+- [PyGraphistry GitHub Repository](https://github.com/graphistry/pygraphistry) - Main project repository with GFQL implementation
+- [2B Edge Graph GPU Result](https://www.linkedin.com/posts/graphistry_at-graph-the-planet-2025-we-showed-gfql-activity-7341259182924304385-F8XF?utm_source=share&utm_medium=member_android&rcm=ACoAAAPO5vIBimmdPlYKpPDVS8xKMWdcgjz403A) - 2025 LinkedIn post about GFQL's 2 billion edge graph GPU performance
+- [What is Graph Intelligence?](https://gradientflow.com/what-is-graph-intelligence/) - 2022 article by Ben Lorica at Gradient Flow on graph intelligence in the compute tier
