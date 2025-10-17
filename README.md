@@ -4,7 +4,7 @@
 
 GFQL (Graph dataFrame Query Language) is an open-source embeddable graph query language for data scientists, analysts, and developers working with graph data. It combines the expressiveness of graph analytics with the performance of modern dataframe operations, enabling native in-memory large-scale columnar computing on graph structures. GFQL makes it easy to wrangle, transform, and analyze graph data using familiar dataframe-style operations while leveraging GPU acceleration for processing graphs with billions of edges.
 
-**GFQL enables graph wrangling without requiring a graph database.** You can separate your storage tier (SQL databases, files, data lakes) from how your application or cluster handles graph operations like shaping, cleaning, pattern searching, algorithmic enrichments, and visualization. Work directly with your existing data infrastructure.
+**GFQL enables graph wrangling without requiring a graph database.** You can separate your storage tier (SQL databases, files, data lakes, or graph databases) from how your application or cluster handles graph operations like shaping, cleaning, pattern searching, algorithmic enrichments, and visualization. Work directly with your existing data infrastructure.
 
 GFQL is trusted by banks, startups, security teams, and every Graphistry user for mission-critical graph analytics and investigation workflows.
 
