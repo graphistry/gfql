@@ -1,0 +1,9 @@
+# Core dependencies
+# Add dependencies here as needed
+
+# Development dependencies (also in pyproject.toml)
+# pytest>=7.0
+# pytest-cov>=4.0
+# black>=23.0
+# flake8>=6.0
+# mypy>=1.0
