@@ -4,13 +4,19 @@
 
 GFQL (Graph dataFrame Query Language) is an open-source embeddable graph query language for data scientists, analysts, and developers working with graph data. It combines the expressiveness of graph analytics with the performance of modern dataframe operations, enabling native in-memory large-scale columnar computing on graph structures. GFQL makes it easy to wrangle, transform, and analyze graph data using familiar dataframe-style operations while leveraging GPU acceleration for processing graphs with billions of edges.
 
+GFQL is trusted by banks, startups, security teams, and every Graphistry user for mission-critical graph analytics and investigation workflows.
+
 ## Top Features
 
 - **Embeddable Graph Queries**: Write expressive graph traversals and pattern matching queries that can be embedded directly in your Python workflows
 - **Dataframe-Native Operations**: Leverage familiar dataframe APIs (pandas, cuDF, Apache Arrow) for graph computations with seamless integration
-- **GPU-Accelerated Performance**: Process massive graphs with billions of edges using GPU acceleration for unprecedented speed
+- **GPU-Accelerated Performance**: Process massive graphs with billions of edges using GPU acceleration for unprecedented speed. Part of the NVIDIA Rapids ecosystem for high-performance GPU computing
 - **Columnar Computing**: Efficient in-memory columnar storage and operations optimized for modern analytics workloads
 - **Open Source & Extensible**: Fully open source with extensible architecture for custom graph operations and integrations
+- **Rich Connector Ecosystem**: Seamlessly integrate with popular data platforms and tools:
+  - **Data Platforms & SQL**: Databricks, Splunk, PostgreSQL, Azure Data Explorer (Kusto), Google Cloud Spanner
+  - **Graph Databases**: Neo4j, Amazon Neptune, TigerGraph, ArangoDB, Memgraph
+  - **Python Tools**: CSV, Pandas, Apache Arrow, NVIDIA RAPIDS, NetworkX, Graphviz
 
 ## Next Steps
 
