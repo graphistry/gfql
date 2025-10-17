@@ -29,6 +29,7 @@ GFQL is trusted by banks, startups, security teams, and every Graphistry user fo
 
 ## Next Steps
 
+- [SQL/Cypher/GFQL Translation Guide](https://pygraphistry.readthedocs.io/en/latest/gfql/translate.html) - Compare GFQL with SQL and Cypher query languages
 - [GFQL Documentation](https://pygraphistry.readthedocs.io/en/latest/gfql/overview.html) - Complete guide in the PyGraphistry Read the Docs
 - [PyGraphistry GitHub Repository](https://github.com/graphistry/pygraphistry) - Main project repository with GFQL implementation
 - [2B Edge Graph GPU Result](https://www.linkedin.com/posts/graphistry_at-graph-the-planet-2025-we-showed-gfql-activity-7341259182924304385-F8XF?utm_source=share&utm_medium=member_android&rcm=ACoAAAPO5vIBimmdPlYKpPDVS8xKMWdcgjz403A) - 2025 LinkedIn post about GFQL's 2 billion edge graph GPU performance
